@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: grey;
 }
 .main {
     display: flex;
@@ -10,45 +11,68 @@ body {
 }
 
 .main .calcContainer {
+    border-radius: 25px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    height: 700px;
-    width: 450px;
-    border: 1px solid black;
+    height: 750px;
+    width: 500px;
     justify-content: flex-start;
 }
 
 .main .calcContainer .displayContainer {
     display: flex;
     flex-direction: column-reverse;
-    border: 1px solid black;
     height: 300px;
     justify-content: center;
     align-items: flex-end;
 }
 
 .main .calcContainer .displayContainer .currentInput {
-    border: 1px solid black;
+    display: flex;
+    font-size: 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
     height: 60%;
     width: 100%;
 }
 
 .main .calcContainer .displayContainer .historicalInput {
-    border: 1px solid black;
+    display: flex;
+    font-size: 30px;
     height: 30%;
     width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 
 .main .buttonGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    padding: 10px;
     height: 100%;
     width: 100%;
 }
 
 .main .buttonGrid .operand {
-    border: 1px solid black;
+    font-size: 1.325rem;
+    font-weight: 700;
+    background: #ffffff;
+    border-radius: 100%;
+    box-shadow: 4px 5px 5px 0px grey;
+    color: #dfdfdf;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    margin: 10px;
+}
+
+.main .buttonGrid .operand:hover {
+    background: limegreen;
+	color: white;
+	transform: translateY(-0.2rem);
 }
 .main .buttonGrid .operator {
     border: 1px dotted green;
