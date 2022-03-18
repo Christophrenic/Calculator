@@ -12,8 +12,8 @@ body {
 .main .calcContainer {
     display: flex;
     flex-direction: column;
-    height: 600px;
-    width: 400px;
+    height: 700px;
+    width: 450px;
     border: 1px solid black;
     justify-content: flex-start;
 }
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     border: 1px solid black;
-    height: 150px;
+    height: 300px;
     justify-content: center;
     align-items: flex-end;
 }
@@ -35,13 +35,30 @@ body {
 
 .main .calcContainer .displayContainer .historicalInput {
     border: 1px solid black;
-    height: 40%;
+    height: 30%;
     width: 100%;
 }
 
 .main .buttonGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     height: 100%;
     width: 100%;
+}
+
+.main .buttonGrid .operand {
+    border: 1px solid black;
+}
+.main .buttonGrid .operator {
+    border: 1px dotted green;
+}
+#clear {
+    grid-column: span 2;
+    border: 1px dotted red
+}
+
+#delete {
+    grid-column: span 2;
+    border: 1px dotted red
 }
