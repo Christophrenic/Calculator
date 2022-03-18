@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main .calcContainer {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    border: 1px solid black;
+    justify-content: flex-start;
+}
+
+.main .calcContainer .displayContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid black;
+    height: 150px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main .calcContainer .displayContainer .currentInput {
+    border: 1px solid black;
+    height: 60%;
+    width: 100%;
+}
+
+.main .calcContainer .displayContainer .historicalInput {
+    border: 1px solid black;
+    height: 40%;
+    width: 100%;
+}
+
+.main .buttonGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    width: 100%;
+}
