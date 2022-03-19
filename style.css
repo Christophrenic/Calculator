@@ -2,7 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
+    background-color: black
 }
 .main {
     display: flex;
@@ -17,7 +17,7 @@ body {
     background-color: black;
     display: flex;
     flex-direction: column;
-    height: 750px;
+    height: 800px;
     width: 500px;
     justify-content: flex-start;
 }
@@ -28,6 +28,8 @@ body {
     height: 300px;
     justify-content: center;
     align-items: flex-end;
+    color: white;
+    padding: 35px;   
 }
 
 .main .calcContainer .displayContainer .currentInput {
@@ -52,37 +54,28 @@ body {
 .main .buttonGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
     padding: 10px;
     height: 100%;
     width: 100%;
+    color: white;
 }
 
 .main .buttonGrid .operand {
-    font-size: 1.325rem;
+    font-size: 30px;
     font-weight: 700;
-    background: #ffffff;
-    border-radius: 100%;
-    box-shadow: 4px 5px 5px 0px grey;
-    color: #dfdfdf;
-    cursor: pointer;
-    transition: all .1s ease-in-out;
-    margin: 10px;
 }
 
-.main .buttonGrid .operand:hover {
-    background: limegreen;
-	color: white;
-	transform: translateY(-0.2rem);
-}
+
 .main .buttonGrid .operator {
-    border: 1px dotted green;
+    font-size: 20px;
 }
 #clear {
     grid-column: span 2;
-    border: 1px dotted red
 }
 
 #delete {
     grid-column: span 2;
-    border: 1px dotted red
+    color: red;
 }
