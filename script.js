@@ -1,3 +1,8 @@
+const currentDisplayText = document.getElementsByClassName('.main . calcContainer .displayContainer .currentInput');
+
+
+
+
 function add(a,b) {
 return a + b;
 };

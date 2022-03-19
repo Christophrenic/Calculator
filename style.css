@@ -2,7 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black
+    background-color: white;
 }
 .main {
     display: flex;
@@ -39,6 +39,7 @@ body {
     align-items: flex-end;
     height: 60%;
     width: 100%;
+    border: 1px dotted white;
 }
 
 .main .calcContainer .displayContainer .historicalInput {
@@ -46,36 +47,46 @@ body {
     font-size: 30px;
     height: 30%;
     width: 100%;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted white;
 
 }
 
 .main .buttonGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    padding: 10px;
+    justify-items: space-evenly;
+    align-items: space-evenly;
     height: 100%;
     width: 100%;
-    color: white;
 }
 
 .main .buttonGrid .operand {
     font-size: 30px;
     font-weight: 700;
+    color: white;
+    background-color: transparent;
 }
 
 
 .main .buttonGrid .operator {
     font-size: 20px;
+    color: white;
+    background-color: transparent;
 }
 #clear {
     grid-column: span 2;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
 }
 
 #delete {
     grid-column: span 2;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: transparent;
     color: red;
 }
